@@ -9,7 +9,8 @@ GPIO.setup(12, GPIO.OUT)
 GPIO.setwarnings(False)
 
 angle = int(sys.argv[1])
-duty = float(angle) / 10 + 5
+print(angle)
+duty = float(angle)/10 + 5
 
 pwm = GPIO.PWM(12,100)
 pwm.start(5)
